@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    --primary-color: #047857;
+    --primary-color-hover: #10b981;
+}
+
+body {
+    font-family: "Open Sans", serif;
+}
+
+.container {
+    width: 650px;
+    /* height: 200px; */
+}
+
+.resizable {
+    overflow: hidden;
+    resize: horizontal;
+}
+
+.draggable {
+    /* position: absolute; */
+    z-index: 100;
+}
+.draggable-handler {
+    cursor: pointer;
+}
+.dragging {
+    cursor: move;
+    z-index: 200 !important;
+}
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+    color: var(--primary-color);
+    cursor: pointer;
+    padding-bottom: 8px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    /* transition: 0.4s; */
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.accordion:hover {
+    color: var(--primary-color-hover);
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.item-group {
+    background-color: white;
+    display: none;
+    /* overflow: hidden; */
+}
