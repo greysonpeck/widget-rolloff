@@ -8,10 +8,18 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet" />
         <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> -->
+        <script type="module" src="./src/script.js"></script>
+        <script src="./src/generic.js"></script>
 
         <title>Document</title>
     </head>
     <body class="text-gray-800 px-4">
+        <select name="cars" id="links" onchange="goTo()">
+            <option value="volvo">Volvo</option>
+            <option value="www.google.com">Google</option>
+            <option value="mercedes">Mercedes</option>
+            <option value="audi">Audi</option>
+        </select>
         <div id="panel1" class="container panel-primary resizable draggable w-full mx-auto ring-1 ring-gray-400">
             <div class="top-bar bg-emerald-700 text-white p-2 pl-4">Rental</div>
             <div class="tab-group flex flex-row w-full">
@@ -58,66 +66,14 @@
                 <h2 class="font-bold text-xl mb-4">Select roll-off size</h2>
                 <div class="page-description mb-2">Prices shown are for a <span class="font-bold">7-day</span> rental.</div>
                 <button class="accordion">Yard Waste</button>
-                <div class="item-group flex flex-col gap-4 pt-3">
-                    <div class="item-info rounded-sm p-4 ring-1 ring-gray-300">
-                        <div class="item-header flex">
-                            <h3 class="font-bold text-lg mb-2 w-full">15 Yard Roll-Off</h3>
-                            <span class="item-price text-lg">$99.99</span>
-                        </div>
-                        <p class="item-desc mb-2 text-sm text-gray-600">
-                            This container accommodates virtually any small to mid-sized residential or commercial project. At a height of 4 ft, it’s easy to
-                            load; yet it holds up to 6 tons of trash and materials.
-                        </p>
-                        <p class="item-desc mb-2 item-desc text-sm text-gray-600">
-                            Approximately 2-3 pick-up truck loads. NO dirt, rock, concrete, brick, asphalt or sod.
-                        </p>
-                        <button class="button-select rounded-md border-[1px] border-emerald-700 text-emerald-700 mt-2 py-1 px-5 hover:bg-gray-50">
-                            Select
-                        </button>
-                    </div>
-                    <div class="item-info rounded-sm p-4 ring-1 ring-gray-300">
-                        <div class="item-header flex">
-                            <h3 class="font-bold text-lg mb-2 w-full">20 Yard Roll-Off</h3>
-                            <span class="item-price text-lg">$159.99</span>
-                        </div>
-                        <p class="item-desc mb-2 text-sm text-gray-600">
-                            This container is specifically designed for heavy materials like dirt and sand. It has a low profile for easy loading of
-                            these materials.
-                        </p>
-                        <button class="button-select rounded-md border-[1px] border-emerald-700 text-emerald-700 mt-2 py-1 px-5 hover:bg-gray-50">
-                            Select
-                        </button>
-                    </div>
-                    <div class="item-info rounded-sm p-4 ring-1 ring-gray-300">
-                        <div class="item-header flex">
-                            <h3 class="font-bold text-lg mb-2 w-full">30 Yard Roll-Off</h3>
-                            <span class="item-price text-lg">$259.99</span>
-                        </div>
-                        <p class="item-desc mb-2 text-sm text-gray-600">
-                            This container is designed for medium-to-large projects, such as interior remodeling, de-cluttering or other interior projects. It’s
-                            the optimal size for trash removal during your next renovation.
-                        </p>
-                        <p class="item-desc mb-2 item-desc text-sm text-gray-600">
-                            Approximately 9-11 pick-up truck loads. NO dirt, rock, concrete, brick, asphalt or sod.
-                        </p>
-                        <button class="button-select rounded-md border-[1px] border-emerald-700 text-emerald-700 mt-2 py-1 px-5 hover:bg-gray-50">
-                            Select
-                        </button>
-                    </div>
-                </div>
+                <div id="yard-zone" class="item-group flex flex-col gap-4 pt-3"></div>
 
                 <button class="accordion">Hazardous Materials</button>
-                <div class="panel">
-                    <p>Lorem ipsum...</p>
-                </div>
+                <div id="yard-zone" class="item-group flex flex-col gap-4 pt-3"></div>
 
                 <button class="accordion">Construction Materials</button>
-                <div class="panel">
-                    <p>Lorem ipsum...</p>
-                </div>
+                <div id="yard-zone" class="item-group flex flex-col gap-4 pt-3"></div>
             </div>
-            <div class="panel-body">Draggable and resizable content</div>
         </div>
-        <script src="./src/script.js"></script>
     </body>
 </html>
