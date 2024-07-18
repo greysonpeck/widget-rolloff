@@ -3,7 +3,7 @@
 
 var acc = document.getElementsByClassName("accordion");
 
-fetch("/data/YardWaste_Items.json")
+fetch("../data/YardWaste_Items.json")
     .then((response) => response.json())
     .then((data) => showInfo(data))
     .catch((error) => console.log(error));
