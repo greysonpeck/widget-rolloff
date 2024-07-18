@@ -4,6 +4,7 @@
   },
   "dependencies": {
     "csv-parser": "^3.0.0",
+    "lucide": "^0.408.0",
     "papaparse": "^5.4.1"
   },
   "name": "widget-rolloff",

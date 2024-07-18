@@ -2,6 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+    .button-primary {
+        @apply py-2 px-4 mt-4 bg-[--primary-color] text-white rounded-md w-full sm:w-fit;
+    }
+
+    .back-link {
+        @apply mb-3 underline text-emerald-700 text-sm text-gray-800;
+    }
+}
+
+.lucide {
+    width: 20px;
+    height: 20px;
+    color: #9ca3af;
+}
+
+.back-icon {
+    margin-top: 1px;
+
+}
+
 html {
     --primary-color: #047857;
     --primary-color-hover: #10b981;
@@ -11,20 +32,16 @@ body {
     font-family: "Open Sans", serif;
 }
 
-.container {
-    max-width: 650px;
-    /* height: 200px; */
-}
-
 .resizable {
     overflow: hidden;
     resize: horizontal;
 }
 
-.draggable {
-    /* position: absolute; */
+/* .draggable {
+    position: absolute;
     z-index: 100;
-}
+} */
+
 .draggable-handler {
     cursor: pointer;
 }
