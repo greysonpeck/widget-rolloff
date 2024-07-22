@@ -10,7 +10,25 @@
     .back-link {
         @apply mb-3 underline text-emerald-700 text-sm text-gray-800;
     }
+
+    .main-content {
+        @apply p-4 sm:p-8;
+    }
+
+    p {
+        @apply text-sm;
+    }
+
+    h4 {
+        @apply uppercase tracking-wider font-bold;
+    }
+
+    .contact-info {
+        @apply text-xs leading-5;
+    }
 }
+
+
 
 .lucide {
     width: 20px;
@@ -31,6 +49,8 @@ html {
 body {
     font-family: "Open Sans", serif;
 }
+
+
 
 .resizable {
     overflow: hidden;
