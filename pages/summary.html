@@ -12,16 +12,16 @@
         <script type="text/javascript" src="../src/generic.js"></script>
         <script src="https://unpkg.com/lucide@latest"></script>
 
-        <title>Document</title>
+        <title>Order Summary</title>
     </head>
     <body class="text-gray-800 px-4">
 
 
-        <div class="main-container mx-auto w-full flex flex-col">
+        <div class="main-container mx-auto w-full flex flex-col mb-8">
             <div class="select-container">
                 <select class="px-2 border-emerald-100 border-8 block bg-emerald-100 text-emerald-800 mb-4" name="link-select" id="links" onchange="goTo()">
                     <option value="/pages/select.html">Select</option>
-                    <option value="/pages/summary.html">Summary</option>
+                    <option value="/pages/summary.html">Order Summary</option>
                     <option value="/pages/select.html">Select</option>
                     <option value="page4.html">Page 4</option>
                 </select>
@@ -101,7 +101,7 @@
                             </div>
                         </div>
                     </div>  
-                    <hr class="my-4">
+                    <hr class="my-6">
                     <div class="summary-block mb-3">
                         <div class="order-header flex">
                             <h3 class="text-base font-bold mb-4 w-full">Order Summary</h3>
@@ -148,9 +148,11 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="order-total font-bold text-right flex mb-8">
+                                <!-- <span class="text-xl w-full">Total</span> -->
+                                <span class="text-2xl w-full">$790.00</span>
+                            </div>
                         </div>
-
-
                     </div>
 
 
