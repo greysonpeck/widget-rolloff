@@ -15,16 +15,12 @@
         @apply p-4 sm:p-8;
     }
 
-    p {
-        @apply text-sm;
-    }
-
     h4 {
         @apply uppercase tracking-wider font-bold;
     }
 
     .contact-info {
-        @apply text-xs leading-5;
+        @apply text-base;
     }
 }
 
