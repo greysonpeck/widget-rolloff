@@ -4,11 +4,15 @@
 
 @layer components {
     .button-primary {
-        @apply mb-4 py-2 px-4 mt-4 bg-[--primary-color] text-white rounded-md w-full sm:w-fit;
+        @apply mb-4 py-2 px-4 mt-4 bg-[--primary-color] text-white rounded-md w-full sm:w-fit sm:min-w-[140px];
     }
 
     .back-link {
-        @apply mb-3 underline text-emerald-700 text-sm text-gray-800;
+        @apply mb-3 underline text-emerald-700 text-sm text-gray-800 underline-offset-4;
+    }
+
+    .back-link:hover {
+        @apply decoration-gray-800 decoration-2;
     }
 
     .main-content {
@@ -16,15 +20,18 @@
     }
 
     h4 {
-        @apply uppercase tracking-wider font-bold;
+        @apply uppercase tracking-wider font-bold text-gray-700;
     }
 
     .contact-info {
         @apply text-base;
+        margin-bottom: 0px;
+    }
+
+    p {
+        @apply text-base text-gray-700 mb-3;
     }
 }
-
-
 
 .lucide {
     width: 20px;
@@ -34,7 +41,6 @@
 
 .back-icon {
     margin-top: 1px;
-
 }
 
 html {
@@ -45,8 +51,6 @@ html {
 body {
     font-family: "Open Sans", serif;
 }
-
-
 
 .resizable {
     overflow: hidden;

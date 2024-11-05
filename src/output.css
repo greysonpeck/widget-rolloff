@@ -606,6 +606,7 @@ video {
   .button-primary {
     width: -moz-fit-content;
     width: fit-content;
+    min-width: 140px;
   }
 }
 
@@ -617,6 +618,12 @@ video {
   --tw-text-opacity: 1;
   color: rgb(31 41 55 / var(--tw-text-opacity));
   text-decoration-line: underline;
+  text-underline-offset: 4px;
+}
+
+.back-link:hover {
+  text-decoration-color: #1f2937;
+  text-decoration-thickness: 2px;
 }
 
 .main-content {
@@ -633,11 +640,22 @@ h4 {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.05em;
+  --tw-text-opacity: 1;
+  color: rgb(55 65 81 / var(--tw-text-opacity));
 }
 
 .contact-info {
   font-size: 1rem;
   line-height: 1.5rem;
+  margin-bottom: 0px;
+}
+
+p {
+  margin-bottom: 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  --tw-text-opacity: 1;
+  color: rgb(55 65 81 / var(--tw-text-opacity));
 }
 
 .sr-only {
@@ -772,9 +790,13 @@ h4 {
   margin-right: auto;
 }
 
-.my-6 {
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
+.my-8 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.mb-0 {
+  margin-bottom: 0px;
 }
 
 .mb-1 {
@@ -791,6 +813,10 @@ h4 {
 
 .mb-4 {
   margin-bottom: 1rem;
+}
+
+.mb-6 {
+  margin-bottom: 1.5rem;
 }
 
 .mb-8 {
@@ -2357,6 +2383,11 @@ h4 {
   color: rgb(75 85 99 / var(--tw-text-opacity));
 }
 
+.text-gray-700 {
+  --tw-text-opacity: 1;
+  color: rgb(55 65 81 / var(--tw-text-opacity));
+}
+
 .text-gray-800 {
   --tw-text-opacity: 1;
   color: rgb(31 41 55 / var(--tw-text-opacity));
@@ -2880,6 +2911,10 @@ body {
 @media (min-width: 640px) {
   .sm\:flex {
     display: flex;
+  }
+
+  .sm\:max-w-\[600px\] {
+    max-width: 600px;
   }
 
   .sm\:underline {

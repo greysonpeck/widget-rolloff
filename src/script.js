@@ -1,6 +1,3 @@
-
-
-
 var acc = document.getElementsByClassName("accordion");
 
 fetch("../data/YardWaste_Items.json")

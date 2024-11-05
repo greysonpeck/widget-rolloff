@@ -14,7 +14,7 @@
 
         <title>Order Summary</title>
     </head>
-    <body class="text-gray-800 px-4">
+    <body class="text-gray-700 px-4">
 
 
         <div class="main-container mx-auto w-full flex flex-col mb-8">
@@ -79,9 +79,9 @@
 
                     <h2 class="font-bold text-xl mb-4">Confirm your request details</h2>
                     
-                    <div class="confirm-block block sm:flex gap-6">
+                    <div class="confirm-block block sm:max-w-[600px] sm:flex gap-6 mb-4">
                         <div class="summary-block mb-4 w-full">
-                            <h4 class="text-xs text-gray-500">Contact information</h3>
+                            <h4 class="text-xs">Contact information</h3>
                             <p class="contact-info">Olivia Laing</p>
                             <p class="contact-info">148 E Market St, Newport</p>
                             <p class="contact-info">604-376-1316</p>
@@ -89,19 +89,28 @@
                         </div>
                         <div class="dates-section w-full">
                             <div class="summary-block mb-4">
-                                <h4 class="text-xs text-gray-500">Delivery date</h3>
+                                <h4 class="text-xs">Delivery date</h3>
                                 <p class="contact-info">Tuesday, June 6</p>
                                 <p class="contact-info text-xs text-gray-500 tracking-wider">9:00 AM - 12:00 PM</p>
                             </div>
 
                             <div class="summary-block mb-4">
-                                <h4 class="text-xs text-gray-500">Return Date</h3>
+                                <h4 class="text-xs">Return Date</h3>
                                 <p class="contact-info">Thursday, June 15</p>
                                 <p class="contact-info text-xs text-gray-500 tracking-wider">9:00 AM - 12:00 PM</p>
                             </div>
                         </div>
+                    </div> 
+                    <div class="confirm-block block sm:max-w-[600px] sm:flex gap-6">
+                        <div class="summary-block mb-4 w-full">
+                            <h4 class="text-xs">Billing Details</h3>
+                            <p class="contact-info">Olivia Laing</p>
+                            <p class="contact-info">148 E Market St, Newport</p>
+                            <p class="contact-info">604-376-1316</p>
+                            <p class="contact-info">olivia.laing@gmail.com</p>
+                        </div>
                     </div>  
-                    <hr class="my-6">
+                    <hr class="my-8">
                     <div class="summary-block mb-3">
                         <div class="order-header flex">
                             <h3 class="text-base font-bold mb-4 w-full">Order Summary</h3>
@@ -110,23 +119,23 @@
                         <div class="material-section">
                             <div class="material-type mb-2">
                                 <div class="line-item mb-3">
-                                <h4 class="text-xs text-gray-500 mb-1">Household Waste</h4>
+                                <h4 class="text-xs mb-1">Household Waste</h4>
                                     <div class="line-item">
                                         <div class="item-container flex">
                                             <p class="font-bold w-full">15 Yard Roll-Off</p>
                                             <span class="text-right">$185.99</span>
                                         </div>
-                                        <div class="days-container flex mb-2 ">
+                                        <div class="days-container flex mb-0">
                                             <p class="w-full ml-3 text-gray-500">Extra days x 2</p>
                                             <span class="text-right">$20.00</span>
                                         </div>
                                     </div>
                                     <div class="line-item">
                                         <div class="item-container flex">
-                                            <p class="font-bold w-full">20 Yard Roll-Off</p>
+                                            <p class="font-bold w-full mb-0">20 Yard Roll-Off</p>
                                             <span class="text-right">$199.99</span>
                                         </div>
-                                        <div class="days-container flex mb-2 ">
+                                        <div class="days-container flex mb-0 ">
                                             <p class="w-full ml-3 text-gray-500">Extra days x 2</p>
                                             <span class="text-right ">$20.00</span>
                                         </div>
@@ -135,13 +144,13 @@
                             </div>
                             <div class="material-type mb-2">
                                 <div class="line-item mb-3">
-                                <h4 class="text-xs text-gray-500 mb-1">Construction Material</h4>
+                                <h4 class="text-xs mb-1">Construction Material</h4>
                                     <div class="line-item">
                                         <div class="item-container flex">
-                                            <p class="font-bold w-full">40 Yard Roll-Off</p>
+                                            <p class="font-bold w-full mb-0">40 Yard Roll-Off</p>
                                             <span class="text-right ">$259.99</span>
                                         </div>
-                                        <div class="days-container flex mb-2 ">
+                                        <div class="days-container flex mb-0">
                                             <p class="w-full ml-3 text-gray-500">Extra days x 2</p>
                                             <span class="text-right">$20.00</span>
                                         </div>
