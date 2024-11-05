@@ -946,6 +946,10 @@ p {
   width: 1.5rem;
 }
 
+.w-\[600px\] {
+  width: 600px;
+}
+
 .w-\[this-is\\\\\] {
   width: this-is\\;
 }
