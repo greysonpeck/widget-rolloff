@@ -827,6 +827,10 @@ p {
   margin-left: 0.75rem;
 }
 
+.mr-16 {
+  margin-right: 4rem;
+}
+
 .mt-2 {
   margin-top: 0.5rem;
 }
@@ -944,10 +948,6 @@ p {
 
 .w-6 {
   width: 1.5rem;
-}
-
-.w-\[600px\] {
-  width: 600px;
 }
 
 .w-\[this-is\\\\\] {
