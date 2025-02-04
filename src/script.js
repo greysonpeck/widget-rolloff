@@ -1,3 +1,23 @@
+document.addEventListener("DOMContentLoaded", function () {
+    // Select the parent container of the buttons
+    const matCards = document.querySelectorAll(".material-card");
+    matCards.forEach((card) => {
+        var cardState = "off";
+
+        card.addEventListener("click", function () {
+            const cardCheck = card.querySelector(".material-check");
+            card.classList.toggle("material-selected");
+            if (cardState === "off") {
+                cardCheck.style.display = "block";
+                cardState = "on";
+            } else {
+                cardCheck.style.display = "none";
+                cardState = "off";
+            }
+        });
+    });
+});
+
 var acc = document.getElementsByClassName("accordion");
 
 fetch("../data/YardWaste_Items.json")
@@ -91,3 +111,5 @@ for (i = 0; i < acc.length; i++) {
 // 3. Open CSV, get number of lines in CSV
 // 4. For each line, Create a div and a header
 // 5..iterate with unique DataTransfer.
+
+// For Material Clicking
