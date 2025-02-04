@@ -2857,7 +2857,7 @@ body {
   background-color: #ffffff;
   border: 1px solid #dddddd;
   border-radius: 4px;
-  padding: 20px 12px 12px 12px;
+  padding: 20px 24px 12px 24px;
   text-align: center;
   position: relative;
 }
@@ -2888,6 +2888,12 @@ body {
 
 .material-selected:hover {
   background-color: rgba(36, 104, 208, 0.15);
+}
+
+.material-desc {
+  font-size: 14px;
+  color: #767676;
+  margin: 0;
 }
 
 @media (min-width: 640px) {
